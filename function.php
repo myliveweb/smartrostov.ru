@@ -3,9 +3,7 @@ ini_set('display_errors', 1);
 
 session_start();
 //$_SESSION = array();
-
-$user = 'myliveweb';
-$pass = 'Otstoy16';
+require_once('lp.php');
 $initArr = array(\PDO::MYSQL_ATTR_INIT_COMMAND => "SET time_zone = '+03:00'");
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=vk_new', $user, $pass, $initArr);
